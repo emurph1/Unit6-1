@@ -4,9 +4,10 @@
 
 dictionary = open('engmix.txt')
 
-L = []
+L = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 for word in dictionary:
-    if 'e' in word:
-        L.append(word)
-
-print(len(L))
+    one = 0
+    two = 0
+    
+    if len(word) == 1:
+        
