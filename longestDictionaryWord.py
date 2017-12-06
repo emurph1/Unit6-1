@@ -15,4 +15,5 @@ for word in dictionary:
         maxword = word
         lettercount = 0
         
-print(maxword)
+print(maxword.strip())
+print(maxletters)
