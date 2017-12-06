@@ -16,4 +16,3 @@ for word in dictionary:
         lettercount = 0
         
 print(maxword)
-print(maxletters)
