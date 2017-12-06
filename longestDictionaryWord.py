@@ -12,7 +12,7 @@ for word in dictionary:
         lettercount = len(word)
     if lettercount > maxletters:
         maxletters = lettercount
-        maxword = w
+        maxword = word
         lettercount = 0
         
 print(maxword)
