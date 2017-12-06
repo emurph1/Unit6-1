@@ -7,7 +7,7 @@ dictionary = open('engmix.txt')
 wordCount = 0
 for word in dictionary:
     if 'murph' in word:
-        print(word.strip())
+        print(word.strip()) #gets rid of weird spacing after each word
     wordCount += 1
     
 print('There are', wordCount, 'words in the dictionary')
