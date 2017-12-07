@@ -6,5 +6,5 @@ L = []
 for line in file:
     print(line.strip())
     L.append(line)
-    print(L.reverse())
+    
     
