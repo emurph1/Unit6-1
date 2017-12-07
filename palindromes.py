@@ -7,9 +7,8 @@ L = []
 for word in dictionary:
     L.append(word.strip())
     for words in L:
-        backwards = [L.reverse()]
-        for wordss in backwards:
-            if wordss == words:
-                print(wordss)
+        L.reverse()
+        backwards = []
+        
         
             
