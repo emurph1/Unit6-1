@@ -3,8 +3,9 @@
 #palindromes.py - prints out all palindromes in the dictionary
 
 dictionary = open('palindromes.txt')
-
+L = []
 for word in dictionary:
+    L.append(word.strip())
     backwards = word.reverse()
     if backwards == word:
         print(word)
