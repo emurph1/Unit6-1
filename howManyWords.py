@@ -4,7 +4,7 @@
 
 dictionary = open('engmix.txt')
 
-L = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+L = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 for word in dictionary:
     L[len(word.strip())-1] += 1
  
