@@ -6,6 +6,7 @@ dictionary = open('palindromes.txt')
 L = []
 for word in dictionary:
     L.append(word.strip())
-
-backwards = L.reverse()
-print(L)
+    for words in L:
+        backwards = L.reverse()
+        if backwards == words:
+            print(backwards)
