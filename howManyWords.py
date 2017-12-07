@@ -7,6 +7,9 @@ dictionary = open('engmix.txt')
 L = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 for word in dictionary:
     L[(len(word))-1] += 1
-    
-print(L)
+ 
+i = 0   
+for len(word):
+    i += 1
+    print('There are', L[i], 'words with', i, 'letters')
         
