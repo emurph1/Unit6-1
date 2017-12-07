@@ -7,5 +7,5 @@ L = []
 for word in dictionary:
     L.append(word.strip())
     backwards = L.reverse()
-    if backwards == word:
-        print(word)
+
+print(L)
