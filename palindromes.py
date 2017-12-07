@@ -4,11 +4,12 @@
 
 dictionary = open('palindromes.txt')
 L = []
+backwards = []
 for word in dictionary:
     L.append(word.strip())
     for words in L:
         L.reverse()
-        backwards = []
+        backwards.append(words)
         
         
             
