@@ -10,5 +10,6 @@ for word in dictionary:
  
 i = 0   
 while i <= len(word):
+    i += 2  
     print('There are', L[i], 'words with', i, 'letters')
-    i += 1    
+      
