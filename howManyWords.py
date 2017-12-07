@@ -10,5 +10,5 @@ for word in dictionary:
  
 i = 0   
 while i < len(L):
-    print('There are', L[i], 'words with', i, 'letters')
+    print('There are', L[i], 'words with', i+1, 'letters')
     i += 1 
