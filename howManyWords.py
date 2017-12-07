@@ -9,7 +9,7 @@ for word in dictionary:
     L[(len(word))-1] += 1
  
 i = 0   
-for len(word):
+for i in range(len(word)):
     i += 1
     print('There are', L[i], 'words with', i, 'letters')
         
