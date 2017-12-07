@@ -6,8 +6,5 @@ dictionary = open('engmix.txt')
 
 L = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 for word in dictionary:
-    one = 0
-    two = 0
-    
     if len(word) == 1:
         
