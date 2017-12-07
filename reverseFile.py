@@ -5,7 +5,5 @@
 file = open(input('Enter file name: '))
 L = []
 for line in file:
-    L.append(line)
-    L.reverse()
-    print(L)
+    print(line.strip())
     
