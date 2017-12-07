@@ -1,1 +1,10 @@
+#Emily Murphy
+#2017-12-07
+#palindromes.py - prints out all palindromes in the dictionary
 
+dictionary = open('engmix.txt')
+
+for word in dictionary:
+    backwards = word.reverse()
+    if backwards == word:
+        print(word)
