@@ -6,7 +6,8 @@ dictionary = open('palindromes.txt')
 L = []
 for word in dictionary:
     word = word.strip()
-    if word == '':
-        if word.reverse() == word:
-            L.append(word)
-            print(word)
+    if word != '':
+        for ch in word:
+            L.append(ch)
+            if L == L.reverse():
+                print(word)
