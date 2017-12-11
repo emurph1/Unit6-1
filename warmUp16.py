@@ -5,8 +5,7 @@
 dictionary = open('engmix.txt')
 L = []
 for line in dictionary:
-    if line[0] == 'e:
-        if line[-1] == 'y':
-            L.append(line.strip())
-
+    if line[0] == 'e' and line[-1] == 'y': 
+        L.append(line.strip())
+  
 print(line)
