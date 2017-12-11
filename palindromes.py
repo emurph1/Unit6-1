@@ -11,5 +11,4 @@ for word in dictionary:
         L.reverse()
         backwards.append(words)
         
-        
             
