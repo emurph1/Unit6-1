@@ -4,9 +4,10 @@
 
 dictionary = open('palindromes.txt')
 
-L = []
+
 for word in dictionary:
     word = word.strip()
+    L = []
     L.append(word)
     L.reverse()
     wordReverse = ''
