@@ -4,11 +4,14 @@
 
 dictionary = open('palindromes.txt')
 
+dictionary = open('engmix.txt')
+L = []
 for word in dictionary:
     word = word.strip()
-    if word != '':
-        L = []
-        for ch in word:
-            L.append(ch)
-            
-
+    L.append(word)
+    L.reverse()
+    wordReverse = ''
+    for ch in L:
+        wordReverse = (wordReverse+ch)
+    if word == wordReverse:
+        print(word)
