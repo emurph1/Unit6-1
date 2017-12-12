@@ -4,7 +4,6 @@
 
 dictionary = open('palindromes.txt')
 
-dictionary = open('engmix.txt')
 L = []
 for word in dictionary:
     word = word.strip()
