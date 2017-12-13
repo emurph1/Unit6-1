@@ -11,7 +11,8 @@ D = open('engmix.txt')
         print(word.strip())'''
         
 for line in D:
+    line = line.strip()
     if line != '':
         if line[0] == 'r':
-            print(line.strip())
+            print(line)
         
