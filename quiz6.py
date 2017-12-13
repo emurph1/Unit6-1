@@ -29,5 +29,5 @@ print(answer)'''
 letter = input('Enter letter: ')
 for word in D:
     word = word.strip()
-    if letter != D:
+    if letter not in word:
         print(word)
