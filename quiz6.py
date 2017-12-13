@@ -10,9 +10,17 @@ D = open('engmix.txt')
     elif word.count('p') == 2:
         print(word.strip())'''
         
-for line in D:
+'''for line in D:
     line = line.strip()
     if line != '':
         if line[0] == 'r':
-            print(line)
-        
+            print(line)'''
+
+num = int(input('Enter number:'))
+for word in D:
+    word = word.strip()
+    length = len(word)
+    answer = ''
+    if length == num:
+        answer = word
+        print(answer)
