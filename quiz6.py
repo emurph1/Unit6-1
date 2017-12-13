@@ -23,4 +23,5 @@ for word in D:
     answer = ''
     if length == num:
         answer = word
+        break
 print(answer)
