@@ -10,8 +10,8 @@ D = open('engmix.txt')
     elif word.count('p') == 2:
         print(word.strip())'''
         
-for word in D:
-    if word != '':
-        if word[0] == 'r':
-            print(word)
+for line in D:
+    if line != '':
+        if line[0] == 'r':
+            print(line.strip())
         
