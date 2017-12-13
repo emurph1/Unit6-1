@@ -16,7 +16,7 @@ D = open('engmix.txt')
         if line[0] == 'r':
             print(line)'''
 
-num = int(input('Enter number:'))
+'''num = int(input('Enter number:'))
 for word in D:
     word = word.strip()
     length = len(word)
@@ -24,4 +24,10 @@ for word in D:
     if length == num:
         answer = word
         break
-print(answer)
+print(answer)'''
+
+letter = input('Enter letter: ')
+for word in D:
+    word = word.strip()
+    if letter != D:
+        print(word)
