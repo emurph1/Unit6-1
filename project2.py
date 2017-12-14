@@ -9,7 +9,7 @@ def loadD():
     D = open('engmix.txt')
     DList = []
     for word in D:
-        DList.append(word.trip())
+        DList.append(word.strip())
     return DList
     
 def updateLetter(cL,nL,s):
