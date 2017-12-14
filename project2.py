@@ -12,9 +12,11 @@ def loadD():
         DList.append(word.trip())
     return DList
     
-
+def updateLetter(cL,nL,s):
+    
+    
+#main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__': 
     lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-    for i in range(1,26):
-        randL = lettersL[randint(1,26)-1]
-        
+    randL = lettersL[randint(1,26)-1]
+    
