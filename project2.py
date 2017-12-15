@@ -15,15 +15,15 @@ def loadD():
 def updateLetter(cL,nL,s):
     if side == 'front':
         print(guess + randL)
-        data['cL'] = guess + randL
+        data['cL'] += str(guess) + str(randL)
         challenge()
     elif side == 'back':
         print(randL + guess)
-        data['cL'] = randL + guess
+        data['cL'] += str(randL) + str(guess)
         challenge()
    
 def challenge(cL,pN,oP):
-    
+    print('Does', oP,'like to challenge', pN, '?')
     
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__':
