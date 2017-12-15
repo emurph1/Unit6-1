@@ -12,7 +12,7 @@ def loadD():
         DList.append(word.strip())
     return DList
     
-def updateLetter(cL,nL,s):
+#def updateLetter(cL,nL,s):
     
     
 #main code that generates the "board" and displays the letters (starting and input)
