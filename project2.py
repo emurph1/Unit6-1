@@ -21,3 +21,8 @@ if __name__ == '__main__':
     randL = lettersL[randint(1,26)-1]
     print('Starting letter: ', randL)
     guess = input('Player 1 enter a letter: ')
+    side = input('Front or back? ')
+    if side == 'front':
+        print(guess, randL)
+    elif side == 'back':
+        print(randL, guess)
