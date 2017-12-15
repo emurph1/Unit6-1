@@ -27,6 +27,6 @@ if __name__ == '__main__':
     print('Starting letter: ', randL)
     guess = input('Player 1 enter a letter: ')
     side = input('Front or back? ')
-    updateLetter()
+    updateLetter(randL,guess,side)
     
     
