@@ -12,8 +12,13 @@ def loadD():
         DList.append(word.strip())
     return DList
     
-#def updateLetter(cL,nL,s):
-    
+def updateLetter(cL,nL,s):
+    if side == 'front':
+        print(guess + randL)
+    elif side == 'back':
+        print(randL + guess)
+   
+#def challenge(cL,pN,oP)
     
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__': 
@@ -22,7 +27,6 @@ if __name__ == '__main__':
     print('Starting letter: ', randL)
     guess = input('Player 1 enter a letter: ')
     side = input('Front or back? ')
-    if side == 'front':
-        print(guess, randL)
-    elif side == 'back':
-        print(randL, guess)
+    updateLetter()
+    
+    
