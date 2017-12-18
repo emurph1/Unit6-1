@@ -19,13 +19,13 @@ def updateLetter(cL,nL,s):
         print(nL + randL)
         data['cL'] += str(nL) + str(randL)
         data['cL'] = cL
-        if len(cL) == 3:
+        if len(data['cL']) == 3:
             challenge(1,2,3)
     elif s == 'after':
         print(randL + nL)
         data['cL'] += str(randL) + str(nL)
         data['cL'] = cL
-        if len(cL) == 3:
+        if len(data['cL']) == 3:
             challenge(1,2,3)
     data['p'] = 'Player 2'
    
