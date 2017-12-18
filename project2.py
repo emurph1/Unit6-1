@@ -27,6 +27,7 @@ def challenge(cL,pN,oP):
     pN = 'Player 1'
     print('Does', oP,'like to challenge', pN, '?')
     
+    
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__':
     data = {}
