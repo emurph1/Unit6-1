@@ -35,7 +35,7 @@ def challenge(cL,pN,oP):
         ans = input('Player 1 enter reserve word or add another letter: ')
         for word in DList:
             if ans not in DList:
-            print('Word not in dictionary' + oP + 'wins')
+                print('Word not in dictionary' + oP + 'wins')
         return True
     elif chall == 'no' or 'No' or 'NO':
         return False
