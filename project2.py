@@ -33,7 +33,8 @@ def challenge(cL,pN,oP):
     chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
     if chall == 'yes' or 'Yes':
         ans = input('Player 1 enter reserve word or add another letter: ')
-        if ans not in DList:
+        for word in DList:
+            if ans not in DList:
             print('Word not in dictionary' + oP + 'wins')
         return True
     elif chall == 'no' or 'No' or 'NO':
