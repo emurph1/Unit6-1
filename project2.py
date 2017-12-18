@@ -25,8 +25,10 @@ def updateLetter(cL,nL,s):
 def challenge(cL,pN,oP):
     oP = 'Player 2'
     pN = 'Player 1'
-    print('Does', oP,'like to challenge', pN, '?')
-    
+    chall = input('Does', oP,'like to challenge', pN, '?')
+    if chall == 'yes' or 'Yes':
+        
+    if chall == 'no' or 'No' or 'NO':
     
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__':
