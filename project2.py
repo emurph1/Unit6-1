@@ -10,7 +10,7 @@ def loadD():
     DList = []
     for word in D:
         DList.append(word.strip())
-    return DList
+        return DList
     
 def updateLetter(cL,nL,s):
     nL = input( data['p'] + ' enter a letter: ')
