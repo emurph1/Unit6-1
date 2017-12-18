@@ -11,7 +11,8 @@ def loadD():
     for word in D:
         DList.append(word.strip())
         return DList
-    
+        
+#when the user adds a new letter
 def updateLetter(cL,nL,s):
     nL = input( data['p'] + ' enter a letter: ')
     s = input('before or after? ')
@@ -28,7 +29,8 @@ def updateLetter(cL,nL,s):
         if len(data['cL']) == 3:
             challenge(1,2,3)
     data['p'] = 'Player 2'
-   
+ 
+#defines what a challenge is and does it 
 def challenge(cL,pN,oP):
     oP = str('Player 2')
     pN = str('Player 1')
