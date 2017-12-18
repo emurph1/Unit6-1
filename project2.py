@@ -27,9 +27,9 @@ def challenge(cL,pN,oP):
     pN = 'Player 1'
     chall = input('Does', oP,'like to challenge', pN, '?')
     if chall == 'yes' or 'Yes':
-        
+        print('Challenge')
     if chall == 'no' or 'No' or 'NO':
-    
+        print('Player 2 turn')
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__':
     data = {}
