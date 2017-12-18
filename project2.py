@@ -13,7 +13,7 @@ def loadD():
     return DList
     
 def updateLetter(cL,nL,s):
-    nL = input( p + 'enter a letter: ')
+    nL = input( data['p'] + 'enter a letter: ')
     s = input('before or after? ')
     if side == 'before':
         print(nL + randL)
