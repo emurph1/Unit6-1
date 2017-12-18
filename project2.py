@@ -28,8 +28,8 @@ def challenge(cL,pN,oP):
     chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
     if chall == 'yes' or 'Yes':
         print('Challenge')
-        elif chall == 'no' or 'No' or 'NO':
-            print('Player 2 turn')
+    if chall == 'no' or 'No' or 'NO':
+        print('Player 2 turn')
         
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__':
