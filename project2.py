@@ -16,13 +16,13 @@ def updateLetter(cL,nL,s):
     nL = input( p + 'enter a letter: ')
     s = input('before or after? ')
     if side == 'before':
-        print(guess + randL)
-        data['cL'] += str(guess) + str(randL)
+        print(nL + randL)
+        data['cL'] += str(nL) + str(randL)
         data['cL'] = cL
         challenge(1,2,3)
     elif side == 'after':
-        print(randL + guess)
-        data['cL'] += str(randL) + str(guess)
+        print(randL + nL)
+        data['cL'] += str(randL) + str(nL)
         data['cL'] = cL
         challenge(1,2,3)
     data['p'] = 'Player 2'
