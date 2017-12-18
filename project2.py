@@ -13,11 +13,11 @@ def loadD():
     return DList
     
 def updateLetter(cL,nL,s):
-    if side == 'front':
+    if side == 'before':
         print(guess + randL)
         data['cL'] += str(guess) + str(randL)
         challenge(data['cL'],data['pN'],data['oP'])
-    elif side == 'back':
+    elif side == 'after':
         print(randL + guess)
         data['cL'] += str(randL) + str(guess)
         challenge(data['cL'],data['pN'],data['oP'])
@@ -30,6 +30,7 @@ def challenge(cL,pN,oP):
         print('Challenge')
     if chall == 'no' or 'No' or 'NO':
         print('Player 2 turn')
+        
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__':
     data = {}
@@ -40,7 +41,7 @@ if __name__ == '__main__':
     randL = lettersL[randint(1,26)-1]
     print('Starting letter: ', randL)
     guess = input('Player 1 enter a letter: ')
-    side = input('Front or back? ')
+    side = input('before or after? ')
     updateLetter(randL,guess,side)
     
     
