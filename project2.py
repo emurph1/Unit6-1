@@ -16,13 +16,15 @@ def updateLetter(cL,nL,s):
     if side == 'front':
         print(guess + randL)
         data['cL'] += str(guess) + str(randL)
-        challenge()
+        challenge(data['cL'],data['pN'],data['oP'])
     elif side == 'back':
         print(randL + guess)
         data['cL'] += str(randL) + str(guess)
-        challenge()
+        challenge(data['cL'],data['pN'],data['oP'])
    
 def challenge(cL,pN,oP):
+    oP = 'Player 2'
+    pN = 'Player 1'
     print('Does', oP,'like to challenge', pN, '?')
     
 #main code that generates the "board" and displays the letters (starting and input)
