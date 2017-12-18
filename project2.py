@@ -23,8 +23,8 @@ def updateLetter(cL,nL,s):
         challenge(data['cL'],data['pN'],data['oP'])
    
 def challenge(cL,pN,oP):
-    oP == str(Player 2)
-    pN == str(Player 1)
+    oP = str(Player 2)
+    pN = str(Player 1)
     chall = input('Does', oP,'like to challenge', pN, '?')
     if chall == 'yes' or 'Yes':
         print('Challenge')
