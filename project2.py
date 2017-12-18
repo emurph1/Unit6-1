@@ -23,6 +23,7 @@ def updateLetter(cL,nL,s):
     elif side == 'after':
         print(randL + guess)
         data['cL'] += str(randL) + str(guess)
+        data['cL'] = cL
         challenge(1,2,3)
     data['p'] = 'Player 2'
    
