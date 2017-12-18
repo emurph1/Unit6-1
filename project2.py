@@ -31,13 +31,13 @@ def challenge(cL,pN,oP):
     oP = str('Player 2')
     pN = str('Player 1')
     chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
-    if chall == 'yes' or 'Yes':
+    if chall == 'yes':
         ans = input('Player 1 enter reserve word or add another letter: ')
         for word in DList:
             if ans not in DList:
                 print('Word not in dictionary' + oP + 'wins')
         return True
-    elif chall == 'no' or 'No' or 'NO':
+    elif chall == 'no':
         return False
         
 #main code that generates the "board" and displays the letters (starting and input)
