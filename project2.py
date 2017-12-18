@@ -31,6 +31,7 @@ def updateLetter(cL,nL,s):
     data['p'] = 'Player 2'
  
 #defines what a challenge is and does it 
+#HOW TO FIND WORD LENGTH SO YOU CAN ONLY CHALLENGE WHEN THERE ARE AT LEAST 3 LETTERS THERE AND HOW TO DO ALL THE CODE AGAIN, BUT INSTEAD IT BEING PLAYER 2'S TURN
 def challenge(cL,pN,oP):
     oP = str('Player 2')
     pN = str('Player 1')
