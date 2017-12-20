@@ -42,7 +42,6 @@ if __name__ == '__main__':
         oP = 'Player 2'
         updateLetter(cL,2,3)
         print(cL)
-        print(cL)
         if len(cL) == 3:
             challege(cL,p,oP)
         elif len(cL) == 3:
