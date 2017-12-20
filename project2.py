@@ -36,8 +36,8 @@ if __name__ == '__main__':
     lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     randL = lettersL[randint(1,26)-1]
     print('Starting letter: ', randL)
-    cL = randL
     while True:
+        cL = randL
         p = 'Player 1'
         oP = 'Player 2'
         updateLetter(cL,2,3)
