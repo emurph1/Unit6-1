@@ -14,7 +14,7 @@ def loadD():
         
 #when the user adds a new letter
 def updateLetter(cL,nL,s):
-    nL = input( str(nL) + ' enter a letter: ')
+    nL = input( p + ' enter a letter: ')
     s = input('before or after? ')
     if s == 'before':
         cL = nL + randL
