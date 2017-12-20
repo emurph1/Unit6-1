@@ -17,6 +17,7 @@ def updateLetter(cL,nL,s):
     cL = randL
     nL = input( p + ' enter a letter: ')
     s = input('before or after? ')
+    return s
  
 #defines what a challenge is and does it 
 def challenge(cL,p,oP):
