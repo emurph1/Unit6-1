@@ -22,7 +22,6 @@ def updateLetter(cL,nL,s):
         print(randL + nL)
  
 #defines what a challenge is and does it 
-#HOW TO FIND WORD LENGTH SO YOU CAN ONLY CHALLENGE WHEN THERE ARE AT LEAST 3 LETTERS THERE AND HOW TO DO ALL THE CODE AGAIN, BUT INSTEAD IT BEING PLAYER 2'S TURN
 def challenge(cL,pN,oP):
     chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
     if chall == 'yes':
