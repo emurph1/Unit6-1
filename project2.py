@@ -18,18 +18,19 @@ def updateLetter(cL,nL,s):
     s = input('before or after? ')
     if s == 'before':
         cL = nL + randL
-        print(cL)
+        return cL
     elif s == 'after':
         cL = randL + nL
-        print(cL)
+        return cL
  
 #defines what a challenge is and does it 
 def challenge(cL,pN,oP):
-    chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
-    if chall == 'yes':
-        return True
-    elif chall == 'no':
-        return False
+    if len(cL) == 3:
+        chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
+        if chall == 'yes':
+            return True
+        elif chall == 'no':
+            return False
         
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__':
