@@ -23,6 +23,10 @@ def updateLetter(cL,nL,s):
     elif s == 'after':
         cL = randL + nL
         return str(cL)
+    p = 'Player 2'
+    oP = 'Player 1'
+    return p
+    return oP
  
 #defines what a challenge is and does it 
 def challenge(cL,p,oP):
