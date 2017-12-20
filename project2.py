@@ -36,11 +36,11 @@ if __name__ == '__main__':
         oP = 'Player 2'
         updateLetter(randL,2,3)
         if s == 'before':
-        cL = nL + randL
-        return cL
+            cL = nL + randL
+            return cL
         elif s == 'after':
-        cL = randL + nL
-        return cL
+            cL = randL + nL
+            return cL
         if len(cL) == 3:
             challege(cL,p,oP)
         elif len(cL) == 3:
