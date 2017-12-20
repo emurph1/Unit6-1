@@ -41,6 +41,7 @@ if __name__ == '__main__':
         p = 'Player 1'
         oP = 'Player 2'
         updateLetter(randL,2,3)
+        print(cL)
         if len(cL) == 3:
             challege(cL,p,oP)
         elif len(cL) == 3:
