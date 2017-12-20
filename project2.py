@@ -24,8 +24,7 @@ def updateLetter(cL,nL,s):
         return cL
  
 #defines what a challenge is and does it 
-def challenge(cL,pN,oP):
-    if len(cL) == 3:
+def challenge(cL,p,oP):
         chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
         if chall == 'yes':
             return True
@@ -39,11 +38,12 @@ if __name__ == '__main__':
     print('Starting letter: ', randL)
     while True:
         p = 'Player 1'
+        oP =
         cL = randL
-        updateLetter(cL,p,3)
+        updateLetter(cL,2,3)
         if len(cL) == 3:
-            challege(1,2,3)
+            challege(cL,p,oP)
         elif len(cL) == 3:
-            challenge(1,2,3)
+            challenge(cL,p,oP)
     
     
