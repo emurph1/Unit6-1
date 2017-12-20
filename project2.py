@@ -38,7 +38,7 @@ if __name__ == '__main__':
     print('Starting letter: ', randL)
     while True:
         p = 'Player 1'
-        oP =
+        oP = 'Player 2'
         cL = randL
         updateLetter(cL,2,3)
         if len(cL) == 3:
