@@ -14,25 +14,18 @@ def loadD():
         
 #when the user adds a new letter
 def updateLetter(cL,nL,s):
-    nL = input( data['p'] + ' enter a letter: ')
+    nL = input( cL + ' enter a letter: ')
     s = input('before or after? ')
     if s == 'before':
         print(nL + randL)
     elif s == 'after':
         print(randL + nL)
-    data['p'] = 'Player 2'
  
 #defines what a challenge is and does it 
 #HOW TO FIND WORD LENGTH SO YOU CAN ONLY CHALLENGE WHEN THERE ARE AT LEAST 3 LETTERS THERE AND HOW TO DO ALL THE CODE AGAIN, BUT INSTEAD IT BEING PLAYER 2'S TURN
 def challenge(cL,pN,oP):
-    oP = str('Player 2')
-    pN = str('Player 1')
     chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
     if chall == 'yes':
-        ans = input('Player 1 enter reserve word or add another letter: ')
-        for word in DList:
-            if ans not in DList:
-                print('Word not in dictionary' + oP + 'wins')
         return True
     elif chall == 'no':
         return False
