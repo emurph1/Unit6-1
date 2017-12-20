@@ -37,10 +37,10 @@ if __name__ == '__main__':
         updateLetter(randL,2,3)
         if s == 'before':
             cL = nL + randL
-            return cL
+            print(cL)
         elif s == 'after':
             cL = randL + nL
-            return cL
+            print(cL)
         if len(cL) == 3:
             challege(cL,p,oP)
         elif len(cL) == 3:
