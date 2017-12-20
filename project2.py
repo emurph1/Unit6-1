@@ -17,7 +17,12 @@ def updateLetter(cL,nL,s):
     cL = randL
     nL = input( p + ' enter a letter: ')
     s = input('before or after? ')
-    return s
+    if s == 'before':
+        cL = nL + randL
+        return str(cL)
+    elif s == 'after':
+        cL = randL + nL
+        return str(cL)
  
 #defines what a challenge is and does it 
 def challenge(cL,p,oP):
@@ -36,12 +41,6 @@ if __name__ == '__main__':
         p = 'Player 1'
         oP = 'Player 2'
         updateLetter(randL,2,3)
-        if s == 'before':
-            cL = nL + randL
-            print(cL)
-        elif s == 'after':
-            cL = randL + nL
-            print(cL)
         if len(cL) == 3:
             challege(cL,p,oP)
         elif len(cL) == 3:
