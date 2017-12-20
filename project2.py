@@ -39,7 +39,7 @@ if __name__ == '__main__':
     while True:
         p = 'Player 1'
         cL = randL
-        updateLetter(1,p,3)
+        updateLetter(cL,p,3)
         if len(cL) == 3:
             challege(1,2,3)
         elif len(cL) == 3:
