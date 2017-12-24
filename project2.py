@@ -41,7 +41,8 @@ if __name__ == '__main__':
             p = "Player 1"
             oP = "Player 2"
             cL = updateLetter(randL,2,3)
-            x += 1
+        for i in range(0,1):
+            
 
 
     
