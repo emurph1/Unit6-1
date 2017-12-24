@@ -1,6 +1,6 @@
 #Emily Murphy
 #2017-12-14
-#project2.py - Lexicant (word guessing game)
+#project2.py - Lexicant (word game)
 
 from random import randint
 
