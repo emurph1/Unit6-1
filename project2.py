@@ -18,10 +18,9 @@ def updateLetter(cL,nL,s):
     s = input('before or after? ')
     if s == 'before':
         cL = nL + randL
-        return cL
     elif s == 'after':
         cL = randL + nL
-        return cL
+    return cL
  
 #defines what a challenge is and does it 
 def challenge(cL,p,oP):
