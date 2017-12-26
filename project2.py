@@ -39,7 +39,7 @@ if __name__ == '__main__':
         for i in range(0,1):
             p = "Player 1"
             oP = "Player 2"
-            cL = updateLetter(randL,2,3)
+            cL = updateLetter(1,2,3)
             print(cL)
         for i in range(0,1):
             p = "Player 2"
