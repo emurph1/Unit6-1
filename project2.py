@@ -46,7 +46,7 @@ if __name__ == '__main__':
             oP = "Player 1"
             cL = updateLetter(cL,2,3)
             print(cL)
-
+    
 
     
     
