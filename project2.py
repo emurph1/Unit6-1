@@ -36,14 +36,14 @@ if __name__ == '__main__':
     while True:
         s = input('before or after? ')
         for i in range(0,1):
-            p = "Player 1"
             nL = input( p + ' enter a letter: ')
+            p = "Player 1"
             oP = "Player 2"
             cL = updateLetter(cL,nL,s)
             print(cL)
         for i in range(0,1):
-            p = "Player 2"
             nL = input( p + ' enter a letter: ')
+            p = "Player 2"
             oP = "Player 1"
             cL = updateLetter(cL,nL,s)
             print(cL)
