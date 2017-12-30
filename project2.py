@@ -14,8 +14,6 @@ def loadD():
         
 #when the user adds a new letter
 def updateLetter(cL,nL,s):
-    nL = input( p + ' enter a letter: ')
-    s = input('before or after? ')
     if s == 'before':
         cL = nL + randL
     elif s == 'after':
@@ -36,6 +34,8 @@ if __name__ == '__main__':
     randL = lettersL[randint(1,26)-1]
     print('Starting letter: ', randL)
     while True:
+        nL = input( p + ' enter a letter: ')
+        s = input('before or after? ')
         for i in range(0,1):
             p = "Player 1"
             oP = "Player 2"
