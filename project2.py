@@ -37,10 +37,10 @@ if __name__ == '__main__':
         p = "Player 1"
         nL = input( p + ' enter a letter: ')
         s = input('before or after? ')
+        p = "Player 2"
         for i in range(0,1):
             oP = "Player 2"
             cL = updateLetter(randL,nL,s)
-            p = "Player 2"
             print(cL)
         for i in range(0,1):
             oP = "Player 1"
