@@ -40,9 +40,9 @@ if __name__ == '__main__':
         for i in range(0,1):
             oP = "Player 2"
             cL = updateLetter(randL,nL,s)
+            p = "Player 2"
             print(cL)
         for i in range(0,1):
-            p = "Player 2"
             oP = "Player 1"
             cL = updateLetter(randL,nL,s)
             print(cL)
