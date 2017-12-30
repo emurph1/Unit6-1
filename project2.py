@@ -39,12 +39,12 @@ if __name__ == '__main__':
         s = input('before or after? ')
         for i in range(0,1):
             oP = "Player 2"
-            cL = updateLetter(cL,nL,s)
+            cL = updateLetter(randL,nL,s)
             print(cL)
         for i in range(0,1):
             p = "Player 2"
             oP = "Player 1"
-            cL = updateLetter(cL,nL,s)
+            cL = updateLetter(randL,nL,s)
             print(cL)
     
 
