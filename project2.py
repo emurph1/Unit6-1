@@ -48,7 +48,8 @@ if __name__ == '__main__':
             s = input('before or after? ')
             cL = updateLetter(randL,nL,s)
             print(cL)
-    
+        if len(cL) == 3:
+            challenge(cL,p,oP)
 
     
     
