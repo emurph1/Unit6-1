@@ -15,9 +15,9 @@ def loadD():
 #when the user adds a new letter
 def updateLetter(cL,nL,s):
     if s == 'before':
-        cL = nL + randL
+        cL = nL + cL
     elif s == 'after':
-        cL = randL + nL
+        cL = cL + nL
     return cL
  
 #defines what a challenge is and does it 
