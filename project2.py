@@ -34,15 +34,17 @@ if __name__ == '__main__':
     randL = lettersL[randint(1,26)-1]
     print('Starting letter: ', randL)
     while True:
-        p = "Player 1"
-        nL = input( p + ' enter a letter: ')
-        s = input('before or after? ')
-        p = "Player 2"
         for i in range(0,1):
+            nL = input( p + ' enter a letter: ')
+            s = input('before or after? ')
+            p = "Player 1"
             oP = "Player 2"
             cL = updateLetter(randL,nL,s)
             print(cL)
         for i in range(0,1):
+            nL = input( p + ' enter a letter: ')
+            s = input('before or after? ')
+            p = "Player 2"
             oP = "Player 1"
             cL = updateLetter(randL,nL,s)
             print(cL)
