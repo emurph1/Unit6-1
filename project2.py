@@ -51,9 +51,10 @@ if __name__ == '__main__':
         if len(cL) == 3:
             challenge(cL,p,oP)
             if True:
-                answ = input(p + 'What word from the dictionary were you thinking of?')
-                if answ in DList:
-                    print(oP + 'Loses and ' + p + 'wins!')
+                answ = input(p + ' ,What word from the dictionary were you thinking of?')
+                for word in DList:
+                    if answ = word:
+                        print(oP + 'Loses and ' + p + 'wins!')
         challenge(cL,p,oP)
                 
                 
