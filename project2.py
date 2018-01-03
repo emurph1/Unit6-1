@@ -22,7 +22,7 @@ def updateLetter(cL,nL,s):
  
 #defines what a challenge is and does it 
 def challenge(cL,p,oP):
-        chall = input('Would ' + oP +' like to challenge '+ pN + '? ')
+        chall = input('Would ' + oP +' like to challenge '+ p + '? ')
         if chall == 'yes':
             return True
         elif chall == 'no':
@@ -31,15 +31,15 @@ def challenge(cL,p,oP):
 #main code that generates the "board" and displays the letters (starting and input)
 if __name__ == '__main__':
     lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-    randL = lettersL[randint(1,26)-1]
-    print('Starting letter: ', randL)
+    cL = lettersL[randint(1,26)-1]
+    print('Starting letter: ', cL)
     while True:
         for i in range(0,1):
             p = "Player 1"
             oP = "Player 2"
             nL = input( p + ' enter a letter: ')
             s = input('before or after? ')
-            cL = updateLetter(randL,nL,s)
+            cL = updateLetter(cL,nL,s)
             print(cL)
         for i in range(0,1):
             p = "Player 2"
@@ -51,9 +51,9 @@ if __name__ == '__main__':
         if len(cL) == 3:
             challenge(cL,p,oP)
             if True:
-                answ = input(pN + 'What word from the dictionary were you thinking of?')
+                answ = input(p + 'What word from the dictionary were you thinking of?')
                 if answ in DList:
-                    print(oP + 'Loses and ' + pN + 'wins!')
+                    print(oP + 'Loses and ' + p + 'wins!')
                 
     
     
