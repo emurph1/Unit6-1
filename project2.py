@@ -53,7 +53,7 @@ if __name__ == '__main__':
             if True:
                 answ = input(p + ' ,What word from the dictionary were you thinking of?')
                 for word in DList:
-                    if answ = word:
+                    if answ == word:
                         print(oP + 'Loses and ' + p + 'wins!')
         challenge(cL,p,oP)
                 
