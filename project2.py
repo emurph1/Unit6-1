@@ -54,5 +54,6 @@ if __name__ == '__main__':
                 answ = input(pN + 'What word from the dictionary were you thinking of?')
                 if answ in DList:
                     print(oP + 'Loses and ' + pN + 'wins!')
+                
     
     
