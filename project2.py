@@ -28,7 +28,7 @@ def challenge(cL,p,oP):
         elif chall == 'no':
             return False
         
-#main code that generates the "board" and displays the letters (starting and input)
+#main code that generates the "board" and displays the letters (starting and updated) and checks dict once a challenge occurs and determines winner
 if __name__ == '__main__':
     lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     cL = lettersL[randint(1,26)-1]
@@ -49,14 +49,13 @@ if __name__ == '__main__':
             cL = updateLetter(cL,nL,s)
             print(cL)
         if len(cL) == 3:
-            challenge(cL,p,oP)
-            if True:
+            if challenge(cL,p,oP):
                 answ = input(p + ' , What word from the dictionary were you thinking of?')
                 DList = loadD()
                 for word in DList:
                     if answ == word:
                         print(oP + 'Loses and ' + p + 'wins!')
-        challenge(cL,p,oP)
+        
                 
                 
     
