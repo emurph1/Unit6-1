@@ -55,7 +55,8 @@ if __name__ == '__main__':
                     if answ == word:
                         print(oP + 'Loses and ' + p + 'wins!')
                     else:
-                        print('Either word is not in dictionary or is not a word and ' + oP + 'was bluffing')
+                        print('Either word is not in dictionary or is not a word and ' + oP + ' was bluffing' + ',' + p + 'wins!')
+                        break
         
                 
                 
