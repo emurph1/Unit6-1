@@ -51,7 +51,7 @@ if __name__ == '__main__':
         if len(cL) == 3:
             challenge(cL,p,oP)
             if True:
-                answ = input(p + ' ,What word from the dictionary were you thinking of?')
+                answ = input(p + ' , What word from the dictionary were you thinking of?')
                 DList = loadD()
                 for word in DList:
                     if answ == word:
