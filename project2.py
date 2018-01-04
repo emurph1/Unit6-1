@@ -50,7 +50,7 @@ if __name__ == '__main__':
                 s = input('before or after? ')
                 cL = updateLetter(cL,nL,s)
                 print(cL)
-            if len(cL) == 3:
+            if len(cL) >= 3:
                 if challenge(cL,p,oP):
                         answ = input(p + ' , What word from the dictionary were you thinking of? ')
                         for word in loadD():
