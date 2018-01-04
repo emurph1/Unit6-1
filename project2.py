@@ -72,8 +72,8 @@ if __name__ == '__main__':
                             elif replay == 'no':
                                 i = 0
                                 endgame = False
-        if endgame = False:
-            break
+            if endgame = False:
+                break
         
                 
                 
