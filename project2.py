@@ -34,7 +34,7 @@ if __name__ == '__main__':
     cL = lettersL[randint(1,26)-1]
     endgame = True
     print('Starting letter: ', cL)
-    if endgame = True:
+    if endgame:
         while True:
             for i in range(0,1):
                 p = "Player 1"
