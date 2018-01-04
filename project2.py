@@ -52,8 +52,8 @@ if __name__ == '__main__':
                 print(cL)
             if len(cL) == 3:
                 if challenge(cL,p,oP):
-                    for word in loadD():
                         answ = input(p + ' , What word from the dictionary were you thinking of? ')
+                        for word in loadD():
                         if answ == word:
                             print(oP + 'Loses and ' + p + 'wins!')
                             replay = input('Would you like to play again? ')
