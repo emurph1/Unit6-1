@@ -60,7 +60,8 @@ if __name__ == '__main__':
                         if replay == 'yes':
                             i = 1
                         elif replay == 'no':
-                            break
+                            i = 0
+    break
         
                 
                 
