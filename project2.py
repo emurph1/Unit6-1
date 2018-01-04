@@ -50,12 +50,12 @@ if __name__ == '__main__':
             print(cL)
         if len(cL) == 3:
             if challenge(cL,p,oP):
-                answ = input(p + ' , What word from the dictionary were you thinking of? ')
                 for word in loadD():
+                    answ = input(p + ' , What word from the dictionary were you thinking of? ')
                     if answ == word:
                         print(oP + 'Loses and ' + p + 'wins!')
                     else:
-                        print('Either word is not in dictionary or is not a word and ' + oP + ' was bluffing' + ',' + p + 'wins!')
+                        print('Either word is not in dictionary or is not a word and ' + oP + ' was bluffing' + ',' + p + ' wins!')
                         replay = input('Would you like to play again? ')
                         if replay == 'yes':
                             i = 1
