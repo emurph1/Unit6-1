@@ -11,7 +11,7 @@ def loadD():
     for word in D:
         DList.append(word.strip())
         return DList
-        
+
 #when the user adds a new letter
 def updateLetter(cL,nL,s):
     if s == 'before':
@@ -76,7 +76,6 @@ if __name__ == '__main__':
             if endgame == False:
                 break
         
-                
-                
+print(loadD())
     
     
