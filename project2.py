@@ -50,11 +50,12 @@ if __name__ == '__main__':
             print(cL)
         if len(cL) == 3:
             if challenge(cL,p,oP):
-                answ = input(p + ' , What word from the dictionary were you thinking of?')
-                DList = loadD()
-                for word in DList:
+                answ = input(p + ' , What word from the dictionary were you thinking of? ')
+                for word in load(D):
                     if answ == word:
                         print(oP + 'Loses and ' + p + 'wins!')
+                    else:
+                        print('Either word is not in dictionary or is not a word and ' + oP + 'was bluffing')
         
                 
                 
