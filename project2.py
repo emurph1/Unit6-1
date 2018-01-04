@@ -54,8 +54,8 @@ if __name__ == '__main__':
                 if challenge(cL,p,oP):
                         answ = input(p + ' , What word from the dictionary were you thinking of? ')
                         for word in loadD():
+                            print(word)
                             if answ == word:
-                                print('emily')
                                 print(oP + 'Loses and ' + p + 'wins!')
                                 replay = input('Would you like to play again? ')
                                 if replay == 'yes':
