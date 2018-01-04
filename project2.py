@@ -54,6 +54,12 @@ if __name__ == '__main__':
                     answ = input(p + ' , What word from the dictionary were you thinking of? ')
                     if answ == word:
                         print(oP + 'Loses and ' + p + 'wins!')
+                        replay = input('Would you like to play again? ')
+                        if replay == 'yes':
+                            i = 1
+                        elif replay == 'no':
+                            i = 0
+                            break
                     else:
                         print('Either word is not in dictionary or is not a word and '+ oP + ' was bluffing ' + ' , '+ p + ' wins!')
                         replay = input('Would you like to play again? ')
