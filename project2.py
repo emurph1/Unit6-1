@@ -60,15 +60,15 @@ if __name__ == '__main__':
                             elif replay == 'no':
                                 i = 0
                                 endgame = False
-                        else:
-                            print('Either word is not in dictionary or is not a word and '+ oP + ' was bluffing ' + ', '+ p + ' wins!')
-                            replay = input('Would you like to play again? ')
-                            if replay == 'yes':
-                                i = 1
-                                endgame = True
-                            elif replay == 'no':
-                                i = 0
-                                endgame = False
+            else:
+                print('Either word is not in dictionary or is not a word and '+ oP + ' was bluffing ' + ', '+ p + ' wins!')
+                replay = input('Would you like to play again? ')
+                if replay == 'yes':
+                    i = 1
+                    endgame = True
+                elif replay == 'no':
+                    i = 0
+                    endgame = False
         for word in loadD():                    
             if cL == word:
                 print(oP + ' loses and ' + p + ' wins because a letter was made!')
