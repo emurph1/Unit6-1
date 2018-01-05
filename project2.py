@@ -35,18 +35,18 @@ if __name__ == '__main__':
         lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
         cL = lettersL[randint(1,26)-1]
         print('Starting letter: ', cL)
-            p = "Player 1"
-            oP = "Player 2"
-            nL = input( p + ' enter a letter: ')
-            s = input('before or after? ')
-            cL = updateLetter(cL,nL,s)
-            print(cL)
-            p = "Player 2"
-            oP = "Player 1"
-            nL = input( p + ' enter a letter: ')
-            s = input('before or after? ')
-            cL = updateLetter(cL,nL,s)
-            print(cL)
+        p = "Player 1"
+        oP = "Player 2"
+        nL = input( p + ' enter a letter: ')
+        s = input('before or after? ')
+        cL = updateLetter(cL,nL,s)
+        print(cL)
+        p = "Player 2"
+        oP = "Player 1"
+        nL = input( p + ' enter a letter: ')
+        s = input('before or after? ')
+        cL = updateLetter(cL,nL,s)
+        print(cL)
         if len(cL) >= 3:
             if challenge(cL,p,oP):
                     answ = input(p + ' , What word from the dictionary were you thinking of? ')
