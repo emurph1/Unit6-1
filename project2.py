@@ -35,14 +35,12 @@ if __name__ == '__main__':
         lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
         cL = lettersL[randint(1,26)-1]
         print('Starting letter: ', cL)
-        for i in range(0,1):
             p = "Player 1"
             oP = "Player 2"
             nL = input( p + ' enter a letter: ')
             s = input('before or after? ')
             cL = updateLetter(cL,nL,s)
             print(cL)
-        for i in range(0,1):
             p = "Player 2"
             oP = "Player 1"
             nL = input( p + ' enter a letter: ')
@@ -71,6 +69,9 @@ if __name__ == '__main__':
                         elif replay == 'no':
                             i = 0
                             endgame = False
+        for word in loadD():                    
+            if cL == word:
+                print(oP + ' loses and ' + p + ' wins because a letter was made!')
         if endgame == False:
             break
         
