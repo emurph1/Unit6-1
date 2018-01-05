@@ -30,41 +30,31 @@ def challenge(cL,p,oP):
         
 #main code that generates the "board" and displays the letters (starting and updated) and checks dict once a challenge occurs and determines winner
 if __name__ == '__main__':
-    lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-    cL = lettersL[randint(1,26)-1]
     endgame = True
-    print('Starting letter: ', cL)
-    if endgame:
-        while True:
-            for i in range(0,1):
-                p = "Player 1"
-                oP = "Player 2"
-                nL = input( p + ' enter a letter: ')
-                s = input('before or after? ')
-                cL = updateLetter(cL,nL,s)
-                print(cL)
-            for i in range(0,1):
-                p = "Player 2"
-                oP = "Player 1"
-                nL = input( p + ' enter a letter: ')
-                s = input('before or after? ')
-                cL = updateLetter(cL,nL,s)
-                print(cL)
-            if len(cL) >= 3:
-                if challenge(cL,p,oP):
-                        answ = input(p + ' , What word from the dictionary were you thinking of? ')
-                        for word in loadD():
-                            if answ == word:
-                                print(oP + ' loses and ' + p + ' wins!')
-                                replay = input('Would you like to play again? ')
-                                if replay == 'yes':
-                                    i = 1
-                                    endgame = True
-                                elif replay == 'no':
-                                    i = 0
-                                    endgame = False
-                        else:
-                            print('Either word is not in dictionary or is not a word and '+ oP + ' was bluffing ' + ', '+ p + ' wins!')
+    while endgame:
+        lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+        cL = lettersL[randint(1,26)-1]
+        print('Starting letter: ', cL)
+        for i in range(0,1):
+            p = "Player 1"
+            oP = "Player 2"
+            nL = input( p + ' enter a letter: ')
+            s = input('before or after? ')
+            cL = updateLetter(cL,nL,s)
+            print(cL)
+        for i in range(0,1):
+            p = "Player 2"
+            oP = "Player 1"
+            nL = input( p + ' enter a letter: ')
+            s = input('before or after? ')
+            cL = updateLetter(cL,nL,s)
+            print(cL)
+        if len(cL) >= 3:
+            if challenge(cL,p,oP):
+                    answ = input(p + ' , What word from the dictionary were you thinking of? ')
+                    for word in loadD():
+                        if answ == word:
+                            print(oP + ' loses and ' + p + ' wins!')
                             replay = input('Would you like to play again? ')
                             if replay == 'yes':
                                 i = 1
@@ -72,8 +62,17 @@ if __name__ == '__main__':
                             elif replay == 'no':
                                 i = 0
                                 endgame = False
-            if endgame == False:
-                break
+                    else:
+                        print('Either word is not in dictionary or is not a word and '+ oP + ' was bluffing ' + ', '+ p + ' wins!')
+                        replay = input('Would you like to play again? ')
+                        if replay == 'yes':
+                            i = 1
+                            endgame = True
+                        elif replay == 'no':
+                            i = 0
+                            endgame = False
+        if endgame == False:
+            break
         
     
     
