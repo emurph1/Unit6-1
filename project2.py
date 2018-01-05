@@ -30,10 +30,9 @@ def challenge(cL,p,oP):
         
 #main code that generates the "board" and displays the letters (starting and updated) and checks dict once a challenge occurs and determines winner
 if __name__ == '__main__':
-    endgame = True
+    lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    cL = lettersL[randint(1,26)-1]
     while endgame:
-        lettersL = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-        cL = lettersL[randint(1,26)-1]
         print('Starting letter: ', cL)
         p = "Player 1"
         oP = "Player 2"
