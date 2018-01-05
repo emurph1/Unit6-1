@@ -41,6 +41,7 @@ if __name__ == '__main__':
         s = input('before or after? ')
         cL = updateLetter(cL,nL,s)
         print(cL)
+        challenge(cL,p,oP)
         p = "Player 2"
         oP = "Player 1"
         nL = input( p + ' enter a letter: ')
